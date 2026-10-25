@@ -33,7 +33,7 @@
   <img src="screenshots/game.png" width="250" alt="Game" />
 </div>
 
-*(Note: Replace the placeholder image links above with actual paths to screenshots in your repository if available.)*
+
 
 ---
 
