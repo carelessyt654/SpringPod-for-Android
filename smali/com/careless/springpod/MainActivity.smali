@@ -2210,13 +2210,13 @@
     return-void
 .end method
 
-###### Class com.careless.springpod.MainActivity.AnonymousClass1 (com.careless.springpod.MainActivity$1)
+
 .class Lcom/careless/springpod/MainActivity$1;
 .super Landroid/webkit/WebViewClient;
 .source "MainActivity.java"
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Lcom/careless/springpod/MainActivity;->onCreate(Landroid/os/Bundle;)V
 .end annotation
@@ -2227,11 +2227,11 @@
 .end annotation
 
 
-# instance fields
+
 .field final synthetic this$0:Lcom/careless/springpod/MainActivity;
 
 
-# direct methods
+
 .method constructor <init>(Lcom/careless/springpod/MainActivity;)V
     .registers 2
 
@@ -2245,7 +2245,7 @@
 .end method
 
 
-# virtual methods
+
 .method public shouldInterceptRequest(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;)Landroid/webkit/WebResourceResponse;
     .registers 5
 
@@ -2264,16 +2264,16 @@
     return-object v0
 .end method
 
-###### Class com.careless.springpod.MainActivity.AnonymousClass2 (com.careless.springpod.MainActivity$2)
+
 .class Lcom/careless/springpod/MainActivity$2;
 .super Ljava/lang/Object;
 .source "MainActivity.java"
 
-# interfaces
+
 .implements Landroid/media/MediaPlayer$OnPreparedListener;
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Lcom/careless/springpod/MainActivity;->startMusic(Ljava/lang/String;Z)V
 .end annotation
@@ -2284,11 +2284,11 @@
 .end annotation
 
 
-# instance fields
+
 .field final synthetic this$0:Lcom/careless/springpod/MainActivity;
 
 
-# direct methods
+
 .method constructor <init>(Lcom/careless/springpod/MainActivity;)V
     .registers 2
 
@@ -2302,7 +2302,7 @@
 .end method
 
 
-# virtual methods
+
 .method public onPrepared(Landroid/media/MediaPlayer;)V
     .registers 8
 
@@ -2385,16 +2385,16 @@
     goto :goto_d
 .end method
 
-###### Class com.careless.springpod.MainActivity.AnonymousClass3 (com.careless.springpod.MainActivity$3)
+
 .class Lcom/careless/springpod/MainActivity$3;
 .super Ljava/lang/Object;
 .source "MainActivity.java"
 
-# interfaces
+
 .implements Landroid/media/MediaPlayer$OnCompletionListener;
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Lcom/careless/springpod/MainActivity;->startMusic(Ljava/lang/String;Z)V
 .end annotation
@@ -2405,11 +2405,11 @@
 .end annotation
 
 
-# instance fields
+
 .field final synthetic this$0:Lcom/careless/springpod/MainActivity;
 
 
-# direct methods
+
 .method constructor <init>(Lcom/careless/springpod/MainActivity;)V
     .registers 2
 
@@ -2423,7 +2423,7 @@
 .end method
 
 
-# virtual methods
+
 .method public onCompletion(Landroid/media/MediaPlayer;)V
     .registers 4
 
@@ -2452,16 +2452,16 @@
     goto :goto_8
 .end method
 
-###### Class com.careless.springpod.MainActivity.AnonymousClass4 (com.careless.springpod.MainActivity$4)
+
 .class Lcom/careless/springpod/MainActivity$4;
 .super Ljava/lang/Object;
 .source "MainActivity.java"
 
-# interfaces
+
 .implements Landroid/media/MediaPlayer$OnErrorListener;
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Lcom/careless/springpod/MainActivity;->startMusic(Ljava/lang/String;Z)V
 .end annotation
@@ -2472,11 +2472,11 @@
 .end annotation
 
 
-# instance fields
+
 .field final synthetic this$0:Lcom/careless/springpod/MainActivity;
 
 
-# direct methods
+
 .method constructor <init>(Lcom/careless/springpod/MainActivity;)V
     .registers 2
 
@@ -2490,7 +2490,7 @@
 .end method
 
 
-# virtual methods
+
 .method public onError(Landroid/media/MediaPlayer;II)Z
     .registers 7
 
@@ -2548,16 +2548,16 @@
     return v0
 .end method
 
-###### Class com.careless.springpod.MainActivity.AnonymousClass5 (com.careless.springpod.MainActivity$5)
+
 .class Lcom/careless/springpod/MainActivity$5;
 .super Ljava/lang/Object;
 .source "MainActivity.java"
 
-# interfaces
+
 .implements Ljava/lang/Runnable;
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Lcom/careless/springpod/MainActivity;->onActivityResult(IILandroid/content/Intent;)V
 .end annotation
@@ -2568,7 +2568,7 @@
 .end annotation
 
 
-# instance fields
+
 .field final synthetic this$0:Lcom/careless/springpod/MainActivity;
 
 .field final synthetic val$id:I
@@ -2578,7 +2578,7 @@
 .field final synthetic val$uris:Ljava/util/List;
 
 
-# direct methods
+
 .method constructor <init>(Lcom/careless/springpod/MainActivity;Ljava/util/List;Ljava/lang/String;I)V
     .registers 5
     .annotation system Ldalvik/annotation/Signature;
@@ -2603,7 +2603,7 @@
 .end method
 
 
-# virtual methods
+
 .method public run()V
     .registers 9
 
@@ -2741,16 +2741,16 @@
     goto :goto_68
 .end method
 
-###### Class com.careless.springpod.MainActivity.AnonymousClass6 (com.careless.springpod.MainActivity$6)
+
 .class Lcom/careless/springpod/MainActivity$6;
 .super Ljava/lang/Object;
 .source "MainActivity.java"
 
-# interfaces
+
 .implements Ljava/lang/Runnable;
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Lcom/careless/springpod/MainActivity;->js(Ljava/lang/String;)V
 .end annotation
@@ -2761,13 +2761,13 @@
 .end annotation
 
 
-# instance fields
+
 .field final synthetic this$0:Lcom/careless/springpod/MainActivity;
 
 .field final synthetic val$code:Ljava/lang/String;
 
 
-# direct methods
+
 .method constructor <init>(Lcom/careless/springpod/MainActivity;Ljava/lang/String;)V
     .registers 3
     .annotation system Ldalvik/annotation/Signature;
@@ -2788,7 +2788,7 @@
 .end method
 
 
-# virtual methods
+
 .method public run()V
     .registers 4
 
@@ -2819,13 +2819,13 @@
     return-void
 .end method
 
-###### Class com.careless.springpod.MainActivity.Bridge (com.careless.springpod.MainActivity$Bridge)
+
 .class Lcom/careless/springpod/MainActivity$Bridge;
 .super Ljava/lang/Object;
 .source "MainActivity.java"
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Lcom/careless/springpod/MainActivity;
 .end annotation
@@ -2836,11 +2836,11 @@
 .end annotation
 
 
-# instance fields
+
 .field final synthetic this$0:Lcom/careless/springpod/MainActivity;
 
 
-# direct methods
+
 .method private constructor <init>(Lcom/careless/springpod/MainActivity;)V
     .registers 2
 
@@ -2864,7 +2864,7 @@
 .end method
 
 
-# virtual methods
+
 .method public fsAppendBase64(Ljava/lang/String;Ljava/lang/String;)Z
     .registers 9
     .annotation runtime Landroid/webkit/JavascriptInterface;
@@ -3380,16 +3380,16 @@
     return-void
 .end method
 
-###### Class com.careless.springpod.MainActivity.Bridge.AnonymousClass1 (com.careless.springpod.MainActivity$Bridge$1)
+
 .class Lcom/careless/springpod/MainActivity$Bridge$1;
 .super Ljava/lang/Object;
 .source "MainActivity.java"
 
-# interfaces
+
 .implements Ljava/lang/Runnable;
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Lcom/careless/springpod/MainActivity$Bridge;->fsImport(Ljava/lang/String;I)V
 .end annotation
@@ -3400,7 +3400,7 @@
 .end annotation
 
 
-# instance fields
+
 .field final synthetic this$1:Lcom/careless/springpod/MainActivity$Bridge;
 
 .field final synthetic val$id:I
@@ -3408,7 +3408,7 @@
 .field final synthetic val$optsJson:Ljava/lang/String;
 
 
-# direct methods
+
 .method constructor <init>(Lcom/careless/springpod/MainActivity$Bridge;Ljava/lang/String;I)V
     .registers 4
     .annotation system Ldalvik/annotation/Signature;
@@ -3431,7 +3431,7 @@
 .end method
 
 
-# virtual methods
+
 .method public run()V
     .registers 7
 
@@ -3553,16 +3553,16 @@
     goto :goto_45
 .end method
 
-###### Class com.careless.springpod.MainActivity.Bridge.AnonymousClass2 (com.careless.springpod.MainActivity$Bridge$2)
+
 .class Lcom/careless/springpod/MainActivity$Bridge$2;
 .super Ljava/lang/Object;
 .source "MainActivity.java"
 
-# interfaces
+
 .implements Ljava/lang/Runnable;
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Lcom/careless/springpod/MainActivity$Bridge;->musicPlay(Ljava/lang/String;Z)Ljava/lang/String;
 .end annotation
@@ -3573,7 +3573,7 @@
 .end annotation
 
 
-# instance fields
+
 .field final synthetic this$1:Lcom/careless/springpod/MainActivity$Bridge;
 
 .field final synthetic val$loop:Z
@@ -3581,7 +3581,7 @@
 .field final synthetic val$path:Ljava/lang/String;
 
 
-# direct methods
+
 .method constructor <init>(Lcom/careless/springpod/MainActivity$Bridge;Ljava/lang/String;Z)V
     .registers 4
     .annotation system Ldalvik/annotation/Signature;
@@ -3604,7 +3604,7 @@
 .end method
 
 
-# virtual methods
+
 .method public run()V
     .registers 4
 
@@ -3623,16 +3623,16 @@
     return-void
 .end method
 
-###### Class com.careless.springpod.MainActivity.Bridge.AnonymousClass3 (com.careless.springpod.MainActivity$Bridge$3)
+
 .class Lcom/careless/springpod/MainActivity$Bridge$3;
 .super Ljava/lang/Object;
 .source "MainActivity.java"
 
-# interfaces
+
 .implements Ljava/lang/Runnable;
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Lcom/careless/springpod/MainActivity$Bridge;->musicStop()V
 .end annotation
@@ -3643,11 +3643,11 @@
 .end annotation
 
 
-# instance fields
+
 .field final synthetic this$1:Lcom/careless/springpod/MainActivity$Bridge;
 
 
-# direct methods
+
 .method constructor <init>(Lcom/careless/springpod/MainActivity$Bridge;)V
     .registers 2
 
@@ -3661,7 +3661,7 @@
 .end method
 
 
-# virtual methods
+
 .method public run()V
     .registers 2
 
@@ -3676,16 +3676,16 @@
     return-void
 .end method
 
-###### Class com.careless.springpod.MainActivity.Bridge.AnonymousClass4 (com.careless.springpod.MainActivity$Bridge$4)
+
 .class Lcom/careless/springpod/MainActivity$Bridge$4;
 .super Ljava/lang/Object;
 .source "MainActivity.java"
 
-# interfaces
+
 .implements Ljava/lang/Runnable;
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Lcom/careless/springpod/MainActivity$Bridge;->musicSeek(D)V
 .end annotation
@@ -3696,13 +3696,13 @@
 .end annotation
 
 
-# instance fields
+
 .field final synthetic this$1:Lcom/careless/springpod/MainActivity$Bridge;
 
 .field final synthetic val$sec:D
 
 
-# direct methods
+
 .method constructor <init>(Lcom/careless/springpod/MainActivity$Bridge;D)V
     .registers 4
     .annotation system Ldalvik/annotation/Signature;
@@ -3723,7 +3723,7 @@
 .end method
 
 
-# virtual methods
+
 .method public run()V
     .registers 7
 
@@ -3806,16 +3806,16 @@
     goto :goto_a
 .end method
 
-###### Class com.careless.springpod.MainActivity.Bridge.AnonymousClass5 (com.careless.springpod.MainActivity$Bridge$5)
+
 .class Lcom/careless/springpod/MainActivity$Bridge$5;
 .super Ljava/lang/Object;
 .source "MainActivity.java"
 
-# interfaces
+
 .implements Ljava/lang/Runnable;
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Lcom/careless/springpod/MainActivity$Bridge;->musicVolume(D)V
 .end annotation
