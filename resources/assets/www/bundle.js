@@ -563,7 +563,7 @@ var settingsMenu = { title: "Settings", make: function () {
   ];
 } };
 
-/* ---------------- Spotify ---------------- */
+
 var SP_CLIENT_ID = "f2d712b364c74b8fbbe52deccda33afd";
 var SP_REDIRECT = "https://appassets.local/index.html";
 var SP_SCOPES = "playlist-read-private playlist-read-collaborative user-library-read";
