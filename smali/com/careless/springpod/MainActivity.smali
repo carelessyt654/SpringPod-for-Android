@@ -3826,13 +3826,13 @@
 .end annotation
 
 
-# instance fields
+
 .field final synthetic this$1:Lcom/careless/springpod/MainActivity$Bridge;
 
 .field final synthetic val$v:D
 
 
-# direct methods
+
 .method constructor <init>(Lcom/careless/springpod/MainActivity$Bridge;D)V
     .registers 4
     .annotation system Ldalvik/annotation/Signature;
@@ -3853,7 +3853,7 @@
 .end method
 
 
-# virtual methods
+
 .method public run()V
     .registers 9
 
