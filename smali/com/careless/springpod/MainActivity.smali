@@ -1,10 +1,10 @@
-###### Class com.careless.springpod.MainActivity (com.careless.springpod.MainActivity)
+
 .class public Lcom/careless/springpod/MainActivity;
 .super Landroid/app/Activity;
 .source "MainActivity.java"
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/careless/springpod/MainActivity$Bridge;
@@ -12,7 +12,7 @@
 .end annotation
 
 
-# static fields
+
 .field private static final HOST:Ljava/lang/String; = "appassets.local"
 
 .field private static final MAX_READ:J = 0x3000000L
@@ -22,7 +22,7 @@
 .field private static final TAG:Ljava/lang/String; = "SpringPod"
 
 
-# instance fields
+
 .field private volatile durCache:D
 
 .field private impId:I
@@ -44,7 +44,7 @@
 .field private web:Landroid/webkit/WebView;
 
 
-# direct methods
+
 .method public constructor <init>()V
     .registers 4
 
