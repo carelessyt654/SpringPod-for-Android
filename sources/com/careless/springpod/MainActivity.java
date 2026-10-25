@@ -31,7 +31,7 @@ import java.util.HashMap;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-/* JADX INFO: loaded from: classes.dex */
+
 public class MainActivity extends Activity {
     private static final String HOST = "appassets.local";
     private static final long MAX_READ = 50331648;
@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
     private int impId = 0;
     private String impTo = "";
 
-    @Override // android.app.Activity
+    @Override 
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         this.root = getFilesDir();
@@ -69,8 +69,8 @@ public class MainActivity extends Activity {
         settings.setSupportZoom(false);
         settings.setCacheMode(-1);
         this.web.addJavascriptInterface(new Bridge(), "Native");
-        this.web.setWebViewClient(new WebViewClient() { // from class: com.careless.springpod.MainActivity.1
-            @Override // android.webkit.WebViewClient
+        this.web.setWebViewClient(new WebViewClient() { 
+            @Override
             public WebResourceResponse shouldInterceptRequest(WebView webView, WebResourceRequest webResourceRequest) {
                 return MainActivity.this.serve(webResourceRequest.getUrl());
             }
@@ -79,7 +79,7 @@ public class MainActivity extends Activity {
         this.web.loadUrl("https://appassets.local/index.html");
     }
 
-    @Override // android.app.Activity
+    @Override 
     protected void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
     }
@@ -88,7 +88,7 @@ public class MainActivity extends Activity {
         getWindow().getDecorView().setSystemUiVisibility(4102);
     }
 
-    @Override // android.app.Activity, android.view.Window.Callback
+    @Override 
     public void onWindowFocusChanged(boolean z) {
         super.onWindowFocusChanged(z);
         if (z) {
@@ -96,12 +96,12 @@ public class MainActivity extends Activity {
         }
     }
 
-    @Override // android.app.Activity
+    @Override 
     public void onBackPressed() {
         moveTaskToBack(true);
     }
 
-    @Override // android.app.Activity
+    @Override 
     protected void onDestroy() {
         releasePlayer();
         if (this.web != null) {
@@ -111,7 +111,7 @@ public class MainActivity extends Activity {
         super.onDestroy();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public WebResourceResponse serve(Uri uri) {
         InputStream inputStreamOpen;
         if (!HOST.equals(uri.getHost())) {
@@ -153,7 +153,7 @@ public class MainActivity extends Activity {
         return lowerCase.endsWith(".html") ? "text/html" : lowerCase.endsWith(".js") ? "application/javascript" : lowerCase.endsWith(".png") ? "image/png" : (lowerCase.endsWith(".jpg") || lowerCase.endsWith(".jpeg")) ? "image/jpeg" : lowerCase.endsWith(".gif") ? "image/gif" : lowerCase.endsWith(".webp") ? "image/webp" : lowerCase.endsWith(".bmp") ? "image/bmp" : lowerCase.endsWith(".mp3") ? "audio/mpeg" : "application/octet-stream";
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public File safe(String str) {
         if (str == null) {
             return null;
@@ -172,7 +172,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static void deleteRec(File file) {
         File[] fileArrListFiles;
         if (file.isDirectory() && (fileArrListFiles = file.listFiles()) != null) {
@@ -265,8 +265,8 @@ public class MainActivity extends Activity {
 
         @JavascriptInterface
         public void fsImport(final String str, final int i) {
-            MainActivity.this.runOnUiThread(new Runnable() { // from class: com.careless.springpod.MainActivity.Bridge.1
-                @Override // java.lang.Runnable
+            MainActivity.this.runOnUiThread(new Runnable() { 
+                @Override 
                 public void run() {
                     try {
                         JSONObject jSONObject = new JSONObject(str);
@@ -290,8 +290,8 @@ public class MainActivity extends Activity {
             if (str.startsWith("files/") && ((fileSafe = MainActivity.this.safe(str.substring(6))) == null || !fileSafe.isFile())) {
                 return "file not found: " + str;
             }
-            MainActivity.this.ui.post(new Runnable() { // from class: com.careless.springpod.MainActivity.Bridge.2
-                @Override // java.lang.Runnable
+            MainActivity.this.ui.post(new Runnable() {
+                @Override 
                 public void run() {
                     MainActivity.this.startMusic(str, z);
                 }
@@ -301,8 +301,8 @@ public class MainActivity extends Activity {
 
         @JavascriptInterface
         public void musicStop() {
-            MainActivity.this.ui.post(new Runnable() { // from class: com.careless.springpod.MainActivity.Bridge.3
-                @Override // java.lang.Runnable
+            MainActivity.this.ui.post(new Runnable() { 
+                @Override 
                 public void run() {
                     MainActivity.this.releasePlayer();
                 }
@@ -311,8 +311,8 @@ public class MainActivity extends Activity {
 
         @JavascriptInterface
         public void musicSeek(final double d) {
-            MainActivity.this.ui.post(new Runnable() { // from class: com.careless.springpod.MainActivity.Bridge.4
-                @Override // java.lang.Runnable
+            MainActivity.this.ui.post(new Runnable() { 
+                @Override 
                 public void run() {
                     if (MainActivity.this.mp != null) {
                         if (MainActivity.this.prepared) {
@@ -332,8 +332,8 @@ public class MainActivity extends Activity {
 
         @JavascriptInterface
         public void musicVolume(final double d) {
-            MainActivity.this.ui.post(new Runnable() { // from class: com.careless.springpod.MainActivity.Bridge.5
-                @Override // java.lang.Runnable
+            MainActivity.this.ui.post(new Runnable() {
+                @Override
                 public void run() {
                     MainActivity.this.vol = (float) Math.max(0.0d, Math.min(1.0d, d));
                     if (MainActivity.this.mp != null) {
@@ -352,7 +352,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+   
     public void releasePlayer() {
         MediaPlayer mediaPlayer = this.mp;
         this.mp = null;
@@ -374,7 +374,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+   
     public void startMusic(String str, boolean z) {
         releasePlayer();
         MediaPlayer mediaPlayer = new MediaPlayer();
@@ -419,8 +419,8 @@ public class MainActivity extends Activity {
             mediaPlayer.setVolume(this.vol, this.vol);
             mediaPlayer.setLooping(z);
             mediaPlayer.setWakeMode(getApplicationContext(), 1);
-            mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() { // from class: com.careless.springpod.MainActivity.2
-                @Override // android.media.MediaPlayer.OnPreparedListener
+            mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                @Override 
                 public void onPrepared(MediaPlayer mediaPlayer2) {
                     if (MainActivity.this.mp == mediaPlayer2) {
                         MainActivity.this.prepared = true;
@@ -433,16 +433,16 @@ public class MainActivity extends Activity {
                     }
                 }
             });
-            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() { // from class: com.careless.springpod.MainActivity.3
-                @Override // android.media.MediaPlayer.OnCompletionListener
+            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override 
                 public void onCompletion(MediaPlayer mediaPlayer2) {
                     if (MainActivity.this.mp == mediaPlayer2) {
                         MainActivity.this.js("window.__spMusicEnd && window.__spMusicEnd()");
                     }
                 }
             });
-            mediaPlayer.setOnErrorListener(new MediaPlayer.OnErrorListener() { // from class: com.careless.springpod.MainActivity.4
-                @Override // android.media.MediaPlayer.OnErrorListener
+            mediaPlayer.setOnErrorListener(new MediaPlayer.OnErrorListener() { 
+                @Override
                 public boolean onError(MediaPlayer mediaPlayer2, int i2, int i3) {
                     Log.e(MainActivity.TAG, "MediaPlayer error " + i2 + "/" + i3);
                     if (MainActivity.this.mp == mediaPlayer2) {
@@ -461,7 +461,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    @Override // android.app.Activity
+    @Override
     protected void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i == REQ_IMPORT) {
@@ -477,8 +477,8 @@ public class MainActivity extends Activity {
                 } else if (intent.getData() != null) {
                     arrayList.add(intent.getData());
                 }
-                new Thread(new Runnable() { // from class: com.careless.springpod.MainActivity.5
-                    @Override // java.lang.Runnable
+                new Thread(new Runnable() {
+                    @Override 
                     public void run() {
                         String str2;
                         JSONArray jSONArray = new JSONArray();
@@ -511,7 +511,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+   
     public String copyIn(Uri uri, String str) throws Throwable {
         Throwable th;
         Cursor cursorQuery;
@@ -601,15 +601,15 @@ public class MainActivity extends Activity {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+
     public void importDone(int i, String str, String str2) {
         js("window.__spImportDone(" + i + "," + JSONObject.quote(str) + "," + (str2 == null ? "null" : JSONObject.quote(str2)) + ")");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+   
     public void js(final String str) {
-        runOnUiThread(new Runnable() { // from class: com.careless.springpod.MainActivity.6
-            @Override // java.lang.Runnable
+        runOnUiThread(new Runnable() { 
+            @Override 
             public void run() {
                 if (MainActivity.this.web != null) {
                     MainActivity.this.web.evaluateJavascript(str, null);
