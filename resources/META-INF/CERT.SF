@@ -1,0 +1,215 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+X-Android-APK-Signed: 2
+SHA-256-Digest-Manifest: PEZdjXl0VbuBQeEyuMCiIDfZK4oS3zZ6mWD5ENvfIRY=
+
+Name: AndroidManifest.xml
+SHA-256-Digest: dCh0dfN8SaHjOYqO4AtfljHnecPwH7AZJ8DKj60nVnY=
+
+Name: assets/app/assets/art/default.png
+SHA-256-Digest: YCKXZi/OtppUT//U6bkWA6onAddUtmMLrdvPp/jtmAo=
+
+Name: assets/app/assets/art/monkeys.png
+SHA-256-Digest: IOEjdf1/zxMX4EEz0LD17/8RDVdSwkvvIygwNDCEfSE=
+
+Name: assets/app/assets/art/music.png
+SHA-256-Digest: 8eFzPW7Cx3SGCWM3vSt0qVabSnMuVgA12+6o2p1tXqc=
+
+Name: assets/app/assets/art/scarlet.png
+SHA-256-Digest: 8pFQZeIvB6mm7CIV27ArFmIIxSAP+LVoAxSrClLFkqo=
+
+Name: assets/app/assets/art/valve.png
+SHA-256-Digest: 8NwZZf2y/tHOoVBw48wPFyv95lIIeSBspEhva8WTW24=
+
+Name: assets/app/assets/f/b10k.png
+SHA-256-Digest: Cp2a5iZFosbXmNP6goryyeVdCZnzSQeb6WP9197Fu5M=
+
+Name: assets/app/assets/f/b10u.png
+SHA-256-Digest: aZZUe6ncw6I2fDw3BdqmhAdacaKocmdL3QmDsWCZLEI=
+
+Name: assets/app/assets/f/b10w.png
+SHA-256-Digest: 5aNxv+Ey9jkEy773vhoZ5ZfzVn6Wb4MBbrgAkCGoYFg=
+
+Name: assets/app/assets/f/b11k.png
+SHA-256-Digest: DjM9CtRU3RiGXlbT96r3eUMsAjFMlDwNbqDT0Xxc6Yw=
+
+Name: assets/app/assets/f/b11u.png
+SHA-256-Digest: i8wuSZzeMBkm4Uy6xgiBWlEOA/89bal7Jz0BpHG7pec=
+
+Name: assets/app/assets/f/b11w.png
+SHA-256-Digest: KbY3xWcP2fVsA/CViJ+JSypJOno7jm9fg8wmh+uEudM=
+
+Name: assets/app/assets/f/b12k.png
+SHA-256-Digest: Hx5+sGoEjEBSl50eKBXfF8+uwvzNMu2ADEHAjM4TAhI=
+
+Name: assets/app/assets/f/b12u.png
+SHA-256-Digest: byX5IVPSYctlCIAQEsIdaggQnelRsOtrfMFTQwbG/sc=
+
+Name: assets/app/assets/f/b12w.png
+SHA-256-Digest: 1OrnvUXbFk6ix9+VvbmyZc/G65A93MYBQ0fn5GuDgk0=
+
+Name: assets/app/assets/f/b13k.png
+SHA-256-Digest: 3OzKGd3V9mUXuiXr7UbNwGpG4YvQh3t03dkuMdYGAXo=
+
+Name: assets/app/assets/f/b13u.png
+SHA-256-Digest: 4SlBtcWFUms+wACSCbWCqaFoTabVB/9qG2GB0opkYyM=
+
+Name: assets/app/assets/f/b13w.png
+SHA-256-Digest: Jvh8hE+3fVJJ4ntIxzLCGhDSfA1nofc9DcO/3ZBt0xg=
+
+Name: assets/app/assets/f/b14k.png
+SHA-256-Digest: /MoEgZsaDhf2u9XvRNOsYJoWS3EjV1cS7nS8xplNthM=
+
+Name: assets/app/assets/f/b14u.png
+SHA-256-Digest: zSpND0xL8MFS0oR8PvgT9CgQ4ZDVEGaZUW7j5nUKPak=
+
+Name: assets/app/assets/f/b14w.png
+SHA-256-Digest: mNd2y9VlXF4MQ8ie13svi5Term0qcX5ewFLs5mkGJVQ=
+
+Name: assets/app/assets/f/b16k.png
+SHA-256-Digest: TL1ObZB6FIcSk/7GIjqox/5eIR+ZItXXRhTUraKDLsA=
+
+Name: assets/app/assets/f/b16u.png
+SHA-256-Digest: LWv3JX54qYUuPoeT8YLa7LmMP217weLzdo3wEHWgrYY=
+
+Name: assets/app/assets/f/b16w.png
+SHA-256-Digest: 10xgd61WzBh/vf3DGayg6WNkhz/0kNi636oFw0Bi4zI=
+
+Name: assets/app/assets/f/b52k.png
+SHA-256-Digest: sZYqHz+12sR2GlqP6VGXUW0AzPDKHRGqXegRBrQwV5o=
+
+Name: assets/app/assets/f/r10k.png
+SHA-256-Digest: MH3df/sV14GpbLBefL8yFcQwjf+oYb6ewxlm64YAW5c=
+
+Name: assets/app/assets/f/r10u.png
+SHA-256-Digest: fhB/Af3zhnH9SPbyYeXF/nIc5ZGmUsNYSxW4V/O9G3I=
+
+Name: assets/app/assets/f/r10w.png
+SHA-256-Digest: id0JtibonziUBAKhcTIeQcnF5j3F+elQpmw2zGY3Q3w=
+
+Name: assets/app/assets/f/r11k.png
+SHA-256-Digest: K8mL63E63kPnprDMttLSk8KnIRd+k7Z2lm26Iw9qVQ8=
+
+Name: assets/app/assets/f/r11u.png
+SHA-256-Digest: PR+ZEgj2zeSM2UlAlZALnnxqCOSh/E2qmEa+jJ/LGh0=
+
+Name: assets/app/assets/f/r11w.png
+SHA-256-Digest: WvYa1pmEevS/pRBqFg/N3pB8dt0E+chrglF+got4ZAE=
+
+Name: assets/app/assets/f/r12k.png
+SHA-256-Digest: xt72JBIpGqD2v+TcPDPDMSHQI5x1ktO1EOHbNHFynW8=
+
+Name: assets/app/assets/f/r12u.png
+SHA-256-Digest: 7mrLh0TTDW3m9fwh4YLsXBY/mwpMPF8J6AFQa5gv8Dc=
+
+Name: assets/app/assets/f/r12w.png
+SHA-256-Digest: 6VXPu5e8N8ziCR5HA4WdxBmgFrDpTqs327GEeUZJngI=
+
+Name: assets/app/assets/m/monkeys_00.mp3
+SHA-256-Digest: fxvR3jBlKdBn2UZk6csYOKFFD6yBY7l/mfRSc8cemA8=
+
+Name: assets/app/assets/m/monkeys_01.mp3
+SHA-256-Digest: xX/YWAC66NhKdbcnTWb7nP7hAAocLvnnEjA0Cc+jKzQ=
+
+Name: assets/app/assets/m/monkeys_02.mp3
+SHA-256-Digest: 3eyiK0tFt9wonQVXjAH+1Q1R5CoNIlKa2hUiIQGypR0=
+
+Name: assets/app/assets/m/monkeys_03.mp3
+SHA-256-Digest: 6beuE7ZYI+rX6WgcLL4TgUZ1apxt+ID4MpmIL0hbb6o=
+
+Name: assets/app/assets/m/monkeys_04.mp3
+SHA-256-Digest: a1iPt0FJ7xmk1kI+z13oI7nFYadB1iEiRWd9opGyck0=
+
+Name: assets/app/assets/m/music_00.mp3
+SHA-256-Digest: ZveAow5qovhKMe9dPmR4I+GwtY2C2tW45TU6uPtvE6I=
+
+Name: assets/app/assets/m/music_01.mp3
+SHA-256-Digest: NtYTxMddU2P3UXdXiTZBPgynEkRVlzVU5zPnT6QbkMQ=
+
+Name: assets/app/assets/m/music_02.mp3
+SHA-256-Digest: zLrBr0FGvdgVkk04ZDvBFnsWIMF6WClSOPtTw3JauL4=
+
+Name: assets/app/assets/m/music_03.mp3
+SHA-256-Digest: sLG/RiQhTlLqc9I/ZwoS8IqYMkLtRYVSYGZgX++0WFo=
+
+Name: assets/app/assets/m/music_04.mp3
+SHA-256-Digest: DxO+EWuIgB+bnU0FuKqDMv59RBlJ+wGCgJdsxy52l6g=
+
+Name: assets/app/assets/m/music_05.mp3
+SHA-256-Digest: VdEWtGVzotZb1UAwmPOdOL1EYmivKnwbF2gRmOY7fxw=
+
+Name: assets/app/assets/m/music_06.mp3
+SHA-256-Digest: f4MLyGt55Uyy20Q0t2LOhOk3NHv7QYgRdnOsMd5qbos=
+
+Name: assets/app/assets/m/music_07.mp3
+SHA-256-Digest: lIHrJtjlWBPwceyiekOAV3Adj0WLO0adU7Lg4sAGxHg=
+
+Name: assets/app/assets/m/music_08.mp3
+SHA-256-Digest: AL3Dr4R2A6vOBoyQ/c/OnMdhv0zAAOm8gJbWT10Rdco=
+
+Name: assets/app/assets/m/music_09.mp3
+SHA-256-Digest: PaMIHW64vriZfD6NTZXG8+Q/3WFG5y1iKvCsTavcdkc=
+
+Name: assets/app/assets/m/scarlet_00.mp3
+SHA-256-Digest: jB48B6BMpKCaKnqkSWmbcvZU8mfiiMfDB/NxRc6D5ps=
+
+Name: assets/app/assets/m/scarlet_01.mp3
+SHA-256-Digest: 80cUIH2zZqOxW/xxes42Pb77KypqI3JZg5bv8tk+t4c=
+
+Name: assets/app/assets/m/scarlet_02.mp3
+SHA-256-Digest: 4EybChcdGkKzEjfOSvC1uG1mo4uHoqaRkflJKYyRYnY=
+
+Name: assets/app/assets/m/scarlet_03.mp3
+SHA-256-Digest: tgncz+Vl3iipoRiQ0Nqim/6nHdxfzgtRmIjiJVaerLw=
+
+Name: assets/app/assets/m/scarlet_04.mp3
+SHA-256-Digest: YkxMinmuC0/eKp1OeZjdBVuET2SkcdzdbLSg8wq0/Qs=
+
+Name: assets/app/assets/m/valve_00.mp3
+SHA-256-Digest: UUUbBD3qpGnfDpIbMXG5UhTypSPT2/STjk5V3jz1k/s=
+
+Name: assets/app/assets/m/valve_01.mp3
+SHA-256-Digest: 8L/T0cHHhJUh4NAtlwuF2UWjMFMf1c/WMGMhd7iN4L4=
+
+Name: assets/app/assets/m/valve_02.mp3
+SHA-256-Digest: hCqdoZx54p5e/38GWInBegml0N2uklHA/uTB5iyb8S0=
+
+Name: assets/app/assets/m/valve_03.mp3
+SHA-256-Digest: x2YEsZRRfLz5H30PGm0i+gu09Pw6uQ5JO1UEYx2gC8o=
+
+Name: assets/app/assets/ui/grain_b.png
+SHA-256-Digest: gI83bsVbI2oyacCVv05uaWA/RBS6PzvkKFWv57nRu3Q=
+
+Name: assets/app/assets/ui/grain_w.png
+SHA-256-Digest: JPjWwbqQhVTDQAxDequRKu+CDhVQSM8EigUG0ndh0L0=
+
+Name: assets/www/bundle.js
+SHA-256-Digest: syiC2BRVSmPZUe91OjyR1AsjUK7o4/qLWHxYKkTAbUc=
+
+Name: assets/www/index.html
+SHA-256-Digest: 7GBKypb1vbOqSRSsg5bv/g+l7fg20Qd5MhFDRp+ID/A=
+
+Name: assets/www/runtime.js
+SHA-256-Digest: GzWAPRlbu9/el2+HZzniF7X9Oe8Ps3NgOw5PtUm8NAI=
+
+Name: res/mipmap-hdpi-v4/ic_launcher.png
+SHA-256-Digest: DjUMev/GWC+JoCNtmWtuKgYKC5o+XYwhoBF6sNg6uT0=
+
+Name: res/mipmap-mdpi-v4/ic_launcher.png
+SHA-256-Digest: +tqeuNTMAbKqnMVUktvD7gVPX0C8Kha2wPo++fFck1w=
+
+Name: res/mipmap-xhdpi-v4/ic_launcher.png
+SHA-256-Digest: AE5HWDubBK7ncdkNng6EprLlCyFqKvmaQHrqxFEKTvw=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher.png
+SHA-256-Digest: 7QPnVfiHG+41E1MkTxzu74rvOAjQTw0dSyg9MZzHavE=
+
+Name: res/mipmap-xxxhdpi-v4/ic_launcher.png
+SHA-256-Digest: VbDYgOrlsYwlIxguNteGj7XCpfcBpC5cjRlDBRTKElE=
+
+Name: resources.arsc
+SHA-256-Digest: Nj65TYdPDSVStTMVQwbMqO/OlVowB8nzCFYZTahlW8c=
+
+Name: classes.dex
+SHA-256-Digest: u/2pOlAFidLBdm4GfQlUYexa18xa27hHg5sGJBXFffk=
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="236"
+    android:versionName="2.0"
+    package="com.careless.springpod"
+    platformBuildVersionCode="23"
+    platformBuildVersionName="6.0.1">
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:theme="@android:style/Theme.Material.NoActionBar"
+        android:label="SpringPod"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true">
+        <activity
+            android:name="com.careless.springpod.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
