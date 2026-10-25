@@ -1,18 +1,15 @@
-/* Spring Launcher API shim for a WebView host.
- * Implements: UIScreen, UIView, UIGameView, UIViewController, UIApplication,
- * UIBezierPath, UIFont, UIMusic, UIAlertView, files, storage, require().
- */
+
 (function () {
   var G = window;
   var PI = Math.PI;
   var LOGICAL_W = 320;
-  var BASE = G.__SP_BASE || "";           // "" => same origin
-  var N = G.Native;                        // Java bridge (or test stub)
+  var BASE = G.__SP_BASE || "";           
+  var N = G.Native;                        
 
   function now() { return (G.performance && performance.now) ? performance.now() : Date.now(); }
   function logErr(tag, e) { try { console.error(tag + ": " + (e && e.stack ? e.stack : e)); } catch (x) {} }
 
-  /* ---------------- screen / canvas geometry ---------------- */
+
   var cv = document.getElementById("cv");
   var ctx = cv.getContext("2d");
   var DPR = G.devicePixelRatio || 1;
@@ -30,7 +27,7 @@
   var activeUntil = 0;
   function dirty(ms) { activeUntil = Math.max(activeUntil, now() + (ms || 150)); }
 
-  /* ---------------- images ---------------- */
+
   var IMG = {};
   function urlFor(path) { return BASE + "/" + path; }
   function loadImg(path) {
@@ -60,7 +57,7 @@
     }));
   }
 
-  /* ---------------- paths ---------------- */
+
   function UIBezierPath() { this.ops = []; }
   var BP = UIBezierPath.prototype;
   BP.moveTo = function (x, y) { this.ops.push(["m", x, y]); return this; };
@@ -101,14 +98,14 @@
     });
   }
 
-  /* ---------------- text ---------------- */
+
   var FONT_STACK = '-apple-system, "Helvetica Neue", Roboto, "Segoe UI", Arial, sans-serif';
   function fontStr(o) { return (o && o.bold ? "bold " : "") + ((o && o.size) || 12) + "px " + FONT_STACK; }
   G.UIFont = {
     measure: function (str, o) { ctx.save(); ctx.font = fontStr(o); var w = ctx.measureText(String(str)).width; ctx.restore(); return w; }
   };
 
-  /* ---------------- drawing context ("c") ---------------- */
+
   var depth = 0;
   function unit() { return DPR * SCALE; }
   function fillOf(f) { return f == null ? null : f; }
@@ -194,7 +191,7 @@
     });
   }
 
-  /* ---------------- views ---------------- */
+  
   var ANIM = null;
   function easeFn(name) {
     if (name === "linear") return function (u) { return u; };
@@ -292,7 +289,7 @@
     ctx.restore();
   }
 
-  /* ---------------- application loop + touch ---------------- */
+  
   var VC = null, touching = false;
   function eachView(list, fn) { list.forEach(function (v) { fn(v); eachView(v.subviews || [], fn); }); }
 
@@ -382,7 +379,7 @@
     }
   };
 
-  /* ---------------- storage ---------------- */
+
   var LS = null; try { LS = G.localStorage; } catch (e) {}
   var memStore = {};
   G.storage = {
@@ -396,7 +393,7 @@
     remove: function (k) { try { if (LS) LS.removeItem("sp:" + k); else delete memStore[k]; } catch (e) {} }
   };
 
-  /* ---------------- files ---------------- */
+
   var impCbs = {}, impId = 0;
   G.files = {
     exists: function (rel) { return !!N.fsExists(String(rel)); },
@@ -416,7 +413,7 @@
     dirty(500);
   };
 
-  /* ---------------- music ---------------- */
+
   var vol = 1;
   G.UIMusic = {
     get volume() { return vol; },
@@ -429,7 +426,7 @@
   };
   G.__spMusicEnd = function () { if (G.UIMusic.onEnd) { try { G.UIMusic.onEnd(); } catch (e) { logErr("onEnd", e); } } };
 
-  /* ---------------- alerts ---------------- */
+
   G.UIAlertView = {
     show: function (o, cb) {
       var ov = document.createElement("div");
@@ -455,7 +452,7 @@
     }
   };
 
-  /* ---------------- module system + boot ---------------- */
+
   var MODS = G.__SP_MODULES || {}, cache = {};
   function req(name) {
     name = String(name).replace(/^\.\//, "");
@@ -474,12 +471,12 @@
       try { req("main.js"); } catch (e) { logErr("main.js", e); }
     });
   }
-  // wait until the viewport has its final size (immersive mode applies after first layout)
+  
   function start() {
     var tries = 0;
     (function wait() {
       if ((G.innerHeight > 0 && G.innerWidth > 0) || tries++ > 60) {
-        // let the immersive-mode resize settle before fixing the layout height
+    
         setTimeout(function () {
           VW = G.innerWidth; VH = G.innerHeight; SCALE = VW / LOGICAL_W;
           G.UIScreen.height = Math.round(VH / SCALE);
