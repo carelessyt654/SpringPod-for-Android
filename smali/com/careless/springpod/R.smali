@@ -1,10 +1,10 @@
-###### Class com.careless.springpod.R (com.careless.springpod.R)
+
 .class public final Lcom/careless/springpod/R;
 .super Ljava/lang/Object;
 .source "R.java"
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/careless/springpod/R$mipmap;,
@@ -13,7 +13,7 @@
 .end annotation
 
 
-# direct methods
+
 .method public constructor <init>()V
     .registers 1
 
@@ -24,13 +24,13 @@
     return-void
 .end method
 
-###### Class com.careless.springpod.R.attr (com.careless.springpod.R$attr)
+
 .class public final Lcom/careless/springpod/R$attr;
 .super Ljava/lang/Object;
 .source "R.java"
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Lcom/careless/springpod/R;
 .end annotation
@@ -41,7 +41,7 @@
 .end annotation
 
 
-# direct methods
+
 .method public constructor <init>()V
     .registers 1
 
@@ -52,13 +52,13 @@
     return-void
 .end method
 
-###### Class com.careless.springpod.R.mipmap (com.careless.springpod.R$mipmap)
+
 .class public final Lcom/careless/springpod/R$mipmap;
 .super Ljava/lang/Object;
 .source "R.java"
 
 
-# annotations
+
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Lcom/careless/springpod/R;
 .end annotation
@@ -69,11 +69,11 @@
 .end annotation
 
 
-# static fields
+
 .field public static final ic_launcher:I = 0x7f020000
 
 
-# direct methods
+
 .method public constructor <init>()V
     .registers 1
 
