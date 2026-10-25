@@ -18,7 +18,7 @@
 
 ##  Features
 
-- **UI Recreation:** UI elements built STRIAGHT from real iPod (6th Generation) Firmware.
+- **UI Recreation:** UI elements built STRAIGHT from real iPod (6th Generation) Firmware.
 - **Audio Playback:** Background playback, Volume control, and play/pause controls.
 - **Spotify Playlists:** Connect your Spotify account and listen to your saved songs and playlists!
 - **Import Audio:** Import your own music with working metadata!
